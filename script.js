@@ -1,5 +1,6 @@
 const projects = [
-	{name: 'four-card-feature-section-master'}
+	{name: 'four-card-feature-section-master'},
+	{name: 'fylo-dark-theme-landing-page-master'}
 ];
 
 const list = document.getElementById('list');

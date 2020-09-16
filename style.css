@@ -57,6 +57,9 @@ ul li a {
 
 ul li img {
 	display: block;
+	-moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
 	margin-bottom: 15px;
 	transition: transform 0.3s ease;
 	height: 200px;
