@@ -1,6 +1,8 @@
 const projects = [
 	{name: 'four-card-feature-section-master'},
-	{name: 'fylo-dark-theme-landing-page-master'}
+	{name: 'fylo-dark-theme-landing-page-master'},
+	{name: 'url-shortening-api-master'},
+	{name: 'rest-countries-api-with-color-theme-switcher-master'}
 ];
 
 const list = document.getElementById('list');

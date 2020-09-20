@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+</head>
+<body>
+<!------------------------------------------------------------------------------
+                            HEADER NAV
+------------------------------------------------------------------------------->
+    <header>
+        <div class="container">
+            <h1>Where in the world?</h1>
+            <button class="btn btn-toogle" id="toggle"> 
+               <i class="far fa-moon"></i> 
+               <i class="fas fa-moon"></i>
+               Dark Mode               
+            </button>
+        </div>
+    </header>
+
+<!------------------------------------------------------------------------------
+                           SEARCH AND FILTER(dropdown)
+------------------------------------------------------------------------------->
+    <section>
+        <div class="container searchnfilter">
+            <input id="search" class="search "type="text" placeholder="Search for a country" />
+
+            <div class="dropdown" id="filter">
+                Filter by Region
+                <i class="fas fa-chevron-down"></i>
+                <ul>
+                    <li>All</li>
+                    <li>Africa</li>
+                    <li>Americas</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+<!------------------------------------------------------------------------------
+                            MODAL POPUP
+------------------------------------------------------------------------------->
+    <div class="modal" id="modal">
+        <div class="container">
+            <button id="close" class="btn-close"><i class="fas fa-times"></i></button>
+            <img src="" alt="">
+            <div class="modal-body">                
+            </div>
+        </div>
+    </div>
+
+<!------------------------------------------------------------------------------
+                            COUNTRIES CARD
+------------------------------------------------------------------------------->
+    <section>
+        <div class="container countries" id="countries">
+            <h2>Countries Loading...</h2>
+        </div>
+    </section>
+
+    <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Odumije Okonye</a>.
+    </p>
+
+<!------------------------------------------------------------------------------
+                            SCRIPT
+------------------------------------------------------------------------------->
+    <script src="script.js"></script>    
+</body>
+</html>

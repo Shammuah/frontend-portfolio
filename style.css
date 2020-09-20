@@ -19,14 +19,16 @@ body {
 h1 {
 	text-align: center;
 }
-
+h1 span{
+	color: rgb(113, 209, 113);
+}
 h2 {
 	position: relative;
 }
 
 h2::after {
 	content: '';
-	background-color: #000;
+	background-color: rgb(113, 209, 113);
 	border-radius: 10px;
 	position: absolute;
 	bottom: -5px;
@@ -90,11 +92,7 @@ ul li p {
 }
 
 .links-container a.blue {
-	background-color: #34a0e9;
-}
-
-.links-container a.youtube {
-	background-color: #ea0000;
+	background-color: rgb(113, 209, 113);
 }
 
 .links-container a:hover {
@@ -104,7 +102,7 @@ ul li p {
 footer {
 	background-color: #222;
 	color: #fff;
-	font-size: 18px;
+	font-size: 15px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -114,9 +112,5 @@ footer {
 }
 
 footer a {
-	color: #fff;
-}
-
-footer i {
-	color: red;
+	color: rgb(113, 209, 113);
 }

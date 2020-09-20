@@ -1,0 +1,256 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --background-el: hsl(0, 0%, 100%);
+    --body: hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--body);
+    color: hsl(200, 15%, 8%);
+    margin: 0;
+}
+
+body.dark{
+    --body: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+    --background-el: hsl(209, 23%, 22%);
+}
+
+header{
+    background-color: var(--background-el);
+    box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.6), 
+        0 1px 2px rgba(0, 0, 0, 0.12);
+}
+img{
+    max-width: 100%;
+}
+
+h1{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    padding: 30px;
+    position: relative;
+    margin: auto;
+}
+
+button{
+    background-color: var(--background-el);
+    color: inherit;
+}
+
+/***********************************************************************************
+                            DARK/LIGHT THEME TOGGLE
+***********************************************************************************/
+.btn-toogle{
+    background-color: var(--background-el);
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    align-items: center;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+.btn-toogle .fas{
+    display: none;
+}
+
+body.dark .btn-toogle .fas{
+    display: inline-block;
+}
+
+body.dark .btn-toogle .far{
+    display: none;
+}
+
+/***********************************************************************************
+                            SEARCH AND FILTER(dropdown)
+***********************************************************************************/
+.search{
+    background-color: var(--background-el);
+    color: inherit;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.6), 
+        0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 25px;
+    font-size: 14px;
+    min-width: 300px;
+}
+.search::placeholder{
+    color: inherit;
+}
+
+/* Dropdown styling */
+.dropdown{
+    background-color: var(--background-el);
+    border-radius: 5px;
+    box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.6), 
+        0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+}
+.fa-chevron-down{
+    margin-left: 10px;
+}
+.dropdown ul{
+    border-radius: 5px;
+    background-color: var(--background-el);
+    color: inherit;
+    box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.6), 
+        0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 20px;
+    left: 0;
+    top: 100%;
+    list-style-type: none;
+    display: none;
+    line-height: 2.5;
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+}
+.dropdown.open ul{
+    display: block;
+}
+
+/***********************************************************************************
+                            COUNTRY CARD
+***********************************************************************************/
+.card{
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.6), 
+        0 1px 2px rgba(0, 0, 0, 0.12);
+    background-color: var(--background-el);
+    margin: 30px;
+    width: 280px;
+}
+.card img{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+.country-body{
+    padding: 30px;
+}
+
+.country-body h2{
+    margin-top: 0;
+}
+
+.container.countries{
+    justify-content: center;
+    margin-top: -30px;
+}
+
+/***********************************************************************************
+                            MODAL POPUP
+***********************************************************************************/
+.modal{
+    background-color: var(--body);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.modal .container{
+    background-color: var(--background-el);
+    box-shadow: 
+        0 1px 3px rgba(0, 0, 0, 0.6), 
+        0 1px 2px rgba(0, 0, 0, 0.12);
+}
+.modal img{
+    max-width: 300px;
+}
+.modal-body{
+    padding: 30px;
+}
+.modal-body{
+    display: flex;
+    flex-direction: row;
+}
+.modal-body ul{
+    list-style-type: none;
+}
+.modal-body ul:nth-child(2){
+    margin-top: 40px;
+}
+.modal-body ul h3{
+    margin-top: -15px;
+    margin-bottom: 35px;
+}
+.btn-close{
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    font-size: 30px;
+    top: 20px;
+    right: 20px;
+}
+
+.attribution{
+    color: inherit;
+    text-align: center;
+    font-size: 15px;
+    padding: 0px 0px 20px 0px;
+    margin: auto;
+}
+.attribution a{
+    color: inherit;
+    text-decoration: none;
+}
+/***********************************************************************************
+                            MEDIA QUERIES
+***********************************************************************************/
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+    .modal-body{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .modal-body ul{
+        text-align: left;
+        padding-left: 0;
+    }
+    .modal-body ul:nth-child(2){
+        margin-top: 0px;
+    }
+    .btn-toogle{
+        font-size: 14px;
+        width: 100px;
+    }
+    .dropdown{
+        margin-top: 5%;
+    }
+}
