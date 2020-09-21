@@ -214,7 +214,6 @@ body.dark .btn-toogle .far{
     font-size: 30px;
     top: 20px;
     right: 20px;
-    background-color: #fff;
 }
 
 .attribution{
@@ -234,6 +233,9 @@ body.dark .btn-toogle .far{
 @media screen and (max-width: 600px){
     h1{
         font-size: 20px;
+    }
+    .modal{
+        top: -5%;
     }
     .modal-body{
         display: flex;
@@ -258,7 +260,7 @@ body.dark .btn-toogle .far{
     }
     .btn-close{
         right: 0;
-        top: -5px;
+        top: 0;
     }
     .btn-toogle{
         font-size: 14px;
