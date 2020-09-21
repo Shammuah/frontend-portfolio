@@ -174,12 +174,12 @@ body.dark .btn-toogle .far{
     display: none;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    top: 0;
+    top: -10%;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 1;
+    position: fixed;    
 }
 .modal .container{
     background-color: var(--background-el);
@@ -191,11 +191,9 @@ body.dark .btn-toogle .far{
     max-width: 300px;
 }
 .modal-body{
-    padding: 30px;
-}
-.modal-body{
     display: flex;
     flex-direction: row;
+    padding: 30px;
 }
 .modal-body ul{
     list-style-type: none;
@@ -242,6 +240,7 @@ body.dark .btn-toogle .far{
     .modal-body ul{
         text-align: left;
         padding-left: 0;
+        margin-top: -5px;
     }
     .modal-body ul:nth-child(2){
         margin-top: 0px;
