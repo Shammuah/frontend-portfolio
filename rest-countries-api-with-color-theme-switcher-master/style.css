@@ -181,6 +181,7 @@ body.dark .btn-toogle .far{
     z-index: 1;
     position: fixed;    
     height: 800px;
+    padding-bottom: 70px;
 }
 .modal .container{
     background-color: var(--background-el);
@@ -244,7 +245,7 @@ body.dark .btn-toogle .far{
         margin-top: -5px;
     }
     .modal-body ul:nth-child(2){
-        margin-top: 0px;
+        margin-top: -20px;
     }
     .btn-toogle{
         font-size: 14px;
