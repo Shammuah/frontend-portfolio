@@ -68,6 +68,7 @@ input{
 *************************************************************************************************/
 nav{
     padding-top: 20px;
+    padding-left: 40px;
 }
 nav ul{
     display: flex;
@@ -375,6 +376,9 @@ footer .flex ul:nth-child(2){
 /**************************************************
                         NAVBAR
 *************************************************/
+    nav{
+        padding-left: 0px;
+    }
     nav .container{
         flex-direction: row;
         align-items: center;
@@ -416,7 +420,7 @@ footer .flex ul:nth-child(2){
         visibility: visible;
     }
     nav #menu.show{        
-        height: 50vh;
+        height: 430px;
         visibility: visible;        
     }
     
