@@ -377,7 +377,7 @@ footer .flex ul:nth-child(2){
                         NAVBAR
 *************************************************/
     nav{
-        padding-left: 0px;
+        padding: 0px 0px;
     }
     nav .container{
         flex-direction: row;
