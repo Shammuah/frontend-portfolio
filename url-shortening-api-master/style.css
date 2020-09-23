@@ -67,8 +67,8 @@ input{
                                     NAVBAR
 *************************************************************************************************/
 nav{
+    padding: 0px 120px 0px 120px;
     padding-top: 20px;
-    padding-left: 40px;
 }
 nav ul{
     display: flex;
@@ -84,8 +84,13 @@ nav ul li a{
 nav ul li a:hover{
     color: black;
 }
+nav img{
+    margin-top: -5px;
+}
 nav .container ul:nth-child(3){
     margin-left: -30%;
+    margin-top: -5px;
+    font-size: 20px;
 }
 nav .container ul:nth-child(4) li:nth-child(2){
     margin-top: -4%;
@@ -323,9 +328,7 @@ footer ul li a{
     color: hsl(257, 7%, 63%);
 }
 
-footer ul li a:hover,
-.icons svg:hover path { 
-    fill: hsl(180, 66%, 49%);
+footer ul li a:hover{
     color: hsl(180, 66%, 49%);
 }
 footer .social-media{
@@ -339,6 +342,9 @@ footer .flex ul:nth-child(2){
 .icons{
     margin-right: 30px;
     margin-top: -80px;
+}
+.icons img:hover{
+    filter: invert(.5) sepia(1) saturate(10) hue-rotate(140deg);
 }
 .attribution{
     color: hsl(257, 7%, 63%);

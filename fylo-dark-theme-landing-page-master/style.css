@@ -250,7 +250,6 @@ input{
 }
 form button{
     border-radius: 25px;
-    margin-left: 15px;
     flex: 0.3;
     padding: 15px;
 }
@@ -412,20 +411,17 @@ footer .circle{
     .start{
         max-width: 90%;
     }
-    .early-access input{
-        width: 100%;
-        margin-right: 30px;
-        flex: 1;
+    .early-access form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
     }
-    .early-access button{
-        margin-top: 30px;
-        margin-left: -25px;
+    form button,
+    form input{
         width: 100%;
-        flex: 1;
-    }
-    button{
-        width: 100%;
-        margin-left: -15px;
+        margin: 0;
+        margin-top: 20px;
     }
     footer ul{
         margin-top: 30px;
