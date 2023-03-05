@@ -27,7 +27,7 @@ function displayCountries(countries) {
     
         countryEl.innerHTML = `
             <div>
-                <img src="${country.flag}" alt="Germany">
+                <img src="${country.flag}" alt="${country.name}">
             </div>
             <div class="country-body">
                 <h3 class="country-name">${country.name}</h3>
