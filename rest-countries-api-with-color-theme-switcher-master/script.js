@@ -10,7 +10,7 @@ const closeBtn = document.getElementById('close');
 getCountries();
 
 async function getCountries() {
-    const res = await fetch('https://restcountries.com/v3.1/all');
+    const res = await fetch('https://restcountries.com/v2/all');
     const countries = await res.json();
 
     displayCountries(countries);
